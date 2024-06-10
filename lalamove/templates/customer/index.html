@@ -1,0 +1,57 @@
+{% extends "layout/base.html" %}
+
+{% block title %}
+List of Customer
+{% endblock title %}
+
+{% block content %}
+{% include "include/navbar.html" %}
+<div class="d-flex justify-content-center mt-3">
+    <a href="/customers/create" class="btn btn-primary">ADD Customers</a>
+</div>
+{% include "include/messages.html" %}
+<div class="col-md-12">
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered" width="100%" id="bootstrapdatatable">
+            <thead>
+                <br>
+                <div class="header-container">
+                    <h1>REGISTERED CUSTOMERS</h1>
+                </div>
+                <br>
+                <tr>
+                    <th>Customer ID</th>
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Last name</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody> 
+                
+                {% for customer in customers %}
+                    <tr>
+                        <td>{{ customer.customer_id }}</td>
+                        <td>{{ customer.first_name }}</td>
+                        <td>{{ customer.middle_name }}</td>
+                        <td>{{ customer.last_name }}</td>
+                        <td>{{ customer.email }}</td>
+                        <td>{{ customer.gender }}</td>
+                        <td>
+                            <div class="btn-group">
+                                <a href="customers/show/{{ customer.customer_id }}" class="btn btn-primary">View</a>
+                                <a href="customers/edit/{{ customer.customer_id }}" class="btn btn-success">Edit</a>
+                                <a href="customers/delete/{{ customer.customer_id }}" class="btn btn-danger">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                {% endfor %}
+                       
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock content %}

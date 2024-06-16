@@ -21,4 +21,5 @@ urlpatterns = [
     path("base/",views.base,name="base"),
     path("base/user_login/",views.user_login,name="user_login"),
     path("intro/",views.intro,name="intro"),
+    path("review/",views.review,name="review"),
 ]

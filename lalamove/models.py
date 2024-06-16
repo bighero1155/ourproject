@@ -22,7 +22,7 @@ class Customer(models.Model):
     middle_name = models.CharField(max_length=55, blank=True)  
     last_name = models.CharField(max_length=55, blank=False)   
     email = models.EmailField()
-    contact = models.IntegerField(blank=False)   
+    contact = models.CharField(max_length=12)   
     age = models.IntegerField(blank=False)
     gender = models.ForeignKey(Gender, on_delete=models.CASCADE)
     date_created = models.DateTimeField(auto_now_add=True) 

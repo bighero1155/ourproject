@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 15px;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .navbar li {
+            display: inline;
+        }
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 8px 16px;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .review-card {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .review-card:hover {
+            transform: scale(1.05);
+        }
+        .review-header {
+            display: flex;
+            align-items: center;
+        }
+        .reviewer-photo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .reviewer-name {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .reviewer-title {
+            color: #cccccc;
+        }
+        .review-content {
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        @media (min-width: 768px) {
+            .review-card {
+                display: flex;
+                flex-direction: row;
+            }
+            .review-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .review-content {
+                flex: 1;
+                margin-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <ul>
+        <li><a href="/customers">Customer Section</a></li>
+        <li><a href="/gender">Gender Section</a></li>
+    </ul>
+</div>
+<br>
+<div style="color: white; text-align: center;">
+    <h1>MEMBERS OF THE PROJECT</h1>
+</div>
+<div class="container">
+    <div class="review-card">
+        <div class="review-header">
+            <div>
+                <div class="reviewer-name">Alex Bravo</div>
+                <div class="reviewer-title">Programmer</div>
+            </div>
+        </div>
+        <div class="review-content">
+            di ko gusto mag leader napilitan gid ya
+        </div>
+    </div>
+
+    <div class="review-card">
+        <div class="review-header">
+            <div>
+                <div class="reviewer-name">Marnel Nunez</div>
+                <div class="reviewer-title">Assistant Programmer</div>
+            </div>
+        </div>
+        <div class="review-content">
+            MEMBER
+        </div>
+    </div>
+
+    <div class="review-card">
+        <div class="review-header">
+            <div>
+                <div class="reviewer-name">Mary Ann Artillero</div>
+                <div class="reviewer-title">Designer</div>
+            </div>
+        </div>
+        <div class="review-content">
+            MEMBER
+        </div>
+    </div>
+
+    <div class="review-card">
+        <div class="review-header">
+            <div>
+                <div class="reviewer-name">Angelica Magallanes</div>
+                <div class="reviewer-title">Research Assistant</div>
+            </div>
+        </div>
+        <div class="review-content">
+            MEMBER
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+

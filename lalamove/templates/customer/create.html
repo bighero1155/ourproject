@@ -8,9 +8,10 @@ Create User
 
 {% include "include/messages.html" %}
 <div class="col-md-8 mx-auto mt-3 text-center">
-    <br><br><br><br><br>
+    <br><br><br><br>
     <div>
-        <h1>CUSTOMER APPLICATION FORM</h1>
+        <h1>CUSTOMER REGISTRATION APPLICATION FORM</h1>
+        <br>
     <form action="/customers/store" method="post">
         {% csrf_token %}
         <div class="row mb-3">

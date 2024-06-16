@@ -175,4 +175,7 @@ def user_login(request):
         
 def intro(request):
         return render(request, 'intro/intro.html')
+
+def review(request):
+        return render(request, 'review/review.html')
         
